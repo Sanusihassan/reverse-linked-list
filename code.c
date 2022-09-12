@@ -3,8 +3,8 @@
 
 typedef struct node
 {
-    int data; // data part
-    struct node *next; //next node
+    int data;          // data part
+    struct node *next; // next node
 } node;
 
 node *createNode(int val)
@@ -43,7 +43,6 @@ void reverse(node **head)
 {
     if ((*head) == NULL)
     {
-        // insert(&reversed, (*head)->data);
         return;
     }
     reverse(&((*head)->next));
