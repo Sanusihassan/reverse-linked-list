@@ -51,11 +51,10 @@ void reverse(node **head)
 int main()
 {
     node *head = NULL;
-    insert(&head, 0);
-    insert(&head, 1);
-    insert(&head, 2);
-    insert(&head, 3);
-    insert(&head, 4);
+    for (int i = 0; i <= 5; i++)
+    {
+        insert(&head, i);
+    }
     printList(head);
     reverse(&head);
     puts("");
